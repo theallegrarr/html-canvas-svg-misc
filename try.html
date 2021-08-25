@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Bottom Waves</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <style>
+        h1 {
+          font-size: 4rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+        body {
+          margin: 0;
+          font-family: 'Prompt', sans-serif;
+          color: white;
+          background: #FF0066;
+          overflow-x: hidden;
+        }
+        .wave {
+            aspect-ratio: 960/300;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .top-wave {
+            background-image: url('./images/lwaves-top.svg');
+        }
+        .bottom-wave {
+            background-image: url('./images/lwaves-bottom.svg');
+            background-position: bottom;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            width: 80vw;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+    </style>
+    <div class="wave top-wave"></div>
+    <div class="main">
+        <h1>A New Wave</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quisquam autem dolore placeat, possimus repudiandae nam et aliquid facilis excepturi velit quae minima maiores obcaecati doloribus veritatis ea ut voluptates?</p>
+    </div>
+    <div class="wave bottom-wave"></div>
+</body>
+</html>
